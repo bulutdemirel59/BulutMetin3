@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metin3 - Ana Sayfa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metin3 - İndir</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Cinzel', serif;
       background: url('https://i.imgur.com/xn4ZC3g.jpeg') no-repeat center center fixed;
       background-size: cover;
       color: #f5deb3;
     }
 
-    header {
+    header, footer {
       background-color: rgba(0, 0, 0, 0.85);
-      padding: 20px;
       text-align: center;
+      padding: 20px;
     }
 
     nav a {
@@ -41,14 +36,26 @@
       background-color: rgba(0, 0, 0, 0.6);
       margin: 20px;
       border-radius: 15px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #aaa;
-      font-size: 0.9rem;
+    .download-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #b22222;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+
+    .download-btn:hover {
+      background-color: #8b0000;
     }
   </style>
 </head>
@@ -66,9 +73,9 @@
   </header>
 
   <div class="content">
-    <h2>Hoş Geldiniz</h2>
-    <p>Metin3 dünyasında macera, mücadele ve efsanevi savaşçılar sizi bekliyor. Yüzlerce görev, zindan ve PvP sistemiyle tam anlamıyla eski okul Metin2 ruhunu yaşatan Metin3'e katılın.</p>
-    <p>Sunucumuz %100 aktif, anti-hile korumalı ve her düzeyden oyuncuya hitap edecek şekilde tasarlanmıştır.</p>
+    <h2>İndirme Sayfası</h2>
+    <p>Metin3 oyun dosyasını aşağıdaki butona tıklayarak indirebilirsiniz. Kurulum sonrası kayıt olduğunuz bilgilerle giriş yapabilirsiniz.</p>
+    <a href="#" class="download-btn">Oyun Dosyasını İndir</a>
   </div>
 
   <footer>

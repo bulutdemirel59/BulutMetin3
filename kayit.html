@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metin3 - Ana Sayfa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metin3 - Kayıt Ol</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Cinzel', serif;
       background: url('https://i.imgur.com/xn4ZC3g.jpeg') no-repeat center center fixed;
       background-size: cover;
       color: #f5deb3;
     }
 
-    header {
+    header, footer {
       background-color: rgba(0, 0, 0, 0.85);
-      padding: 20px;
       text-align: center;
+      padding: 20px;
     }
 
     nav a {
@@ -41,14 +36,35 @@
       background-color: rgba(0, 0, 0, 0.6);
       margin: 20px;
       border-radius: 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #aaa;
-      font-size: 0.9rem;
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 1rem;
+      background-color: #b22222;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #8b0000;
     }
   </style>
 </head>
@@ -66,9 +82,14 @@
   </header>
 
   <div class="content">
-    <h2>Hoş Geldiniz</h2>
-    <p>Metin3 dünyasında macera, mücadele ve efsanevi savaşçılar sizi bekliyor. Yüzlerce görev, zindan ve PvP sistemiyle tam anlamıyla eski okul Metin2 ruhunu yaşatan Metin3'e katılın.</p>
-    <p>Sunucumuz %100 aktif, anti-hile korumalı ve her düzeyden oyuncuya hitap edecek şekilde tasarlanmıştır.</p>
+    <h2>Kayıt Ol</h2>
+    <form action="#" method="POST">
+      <input type="text" name="username" placeholder="Kullanıcı Adı" required>
+      <input type="email" name="email" placeholder="Email Adresi" required>
+      <input type="password" name="password" placeholder="Şifre" required>
+      <input type="password" name="confirm" placeholder="Şifre Tekrar" required>
+      <button type="submit">Hesap Oluştur</button>
+    </form>
   </div>
 
   <footer>

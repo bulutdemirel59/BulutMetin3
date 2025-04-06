@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metin3 - Ana Sayfa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metin3 - Sıralama</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Cinzel', serif;
       background: url('https://i.imgur.com/xn4ZC3g.jpeg') no-repeat center center fixed;
       background-size: cover;
       color: #f5deb3;
     }
 
-    header {
+    header, footer {
       background-color: rgba(0, 0, 0, 0.85);
-      padding: 20px;
       text-align: center;
+      padding: 20px;
     }
 
     nav a {
@@ -41,14 +36,30 @@
       background-color: rgba(0, 0, 0, 0.6);
       margin: 20px;
       border-radius: 15px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    footer {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
       text-align: center;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #aaa;
-      font-size: 0.9rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #b22222;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.05);
     }
   </style>
 </head>
@@ -66,9 +77,34 @@
   </header>
 
   <div class="content">
-    <h2>Hoş Geldiniz</h2>
-    <p>Metin3 dünyasında macera, mücadele ve efsanevi savaşçılar sizi bekliyor. Yüzlerce görev, zindan ve PvP sistemiyle tam anlamıyla eski okul Metin2 ruhunu yaşatan Metin3'e katılın.</p>
-    <p>Sunucumuz %100 aktif, anti-hile korumalı ve her düzeyden oyuncuya hitap edecek şekilde tasarlanmıştır.</p>
+    <h2>Oyuncu Sıralaması</h2>
+    <p>Sunucunun en güçlü savaşçıları burada listeleniyor!</p>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Karakter Adı</th>
+        <th>Seviye</th>
+        <th>Lonca</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>EjderKral</td>
+        <td>105</td>
+        <td>Krallar</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>GölgelerinEfendisi</td>
+        <td>103</td>
+        <td>Karanlık</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Yıldırım</td>
+        <td>101</td>
+        <td>GökYüzü</td>
+      </tr>
+    </table>
   </div>
 
   <footer>
