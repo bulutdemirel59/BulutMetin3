@@ -1,73 +1,20 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bulut Metin 3</title>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet"/>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    body, html {
+    html, body {
       height: 100%;
       font-family: 'Unbounded', sans-serif;
-      scroll-behavior: smooth;
       background-color: #111;
-    }
-    .hero {
-      background: url('https://bulutdemirel59.github.io/BulutMetin3/kapak.png') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      position: relative;
-      animation: fadeIn 2s ease;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    .overlay {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 1;
-    }
-    .hero-content {
-      z-index: 2;
-    }
-    .hero h1 {
-      font-size: 4rem;
-      margin-bottom: 20px;
-      animation: slideDown 1.5s ease;
-    }
-    @keyframes slideDown {
-      from { transform: translateY(-50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    .hero button {
-      padding: 15px 30px;
-      margin: 10px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      background: #f2b705;
-      color: #000;
-      transition: all 0.3s ease;
-    }
-    .hero button:hover {
-      background: #ffc107;
-      transform: scale(1.05);
     }
     nav {
       background: #111;
@@ -95,29 +42,81 @@
       color: #ffc107;
       border-color: #ffc107;
     }
+
+    .hero {
+      background: url('https://bulutdemirel59.github.io/BulutMetin3/kapak.png') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #f2b705;
+      color: #000;
+      transition: all 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #ffc107;
+      transform: scale(1.05);
+    }
+
     .section {
       padding: 80px 20px;
       background: #1a1a1a;
       color: white;
-      animation: fadeIn 1s ease-in-out;
     }
+
     .section h2 {
       text-align: center;
       font-size: 2rem;
       margin-bottom: 20px;
     }
+
     .section p {
       max-width: 800px;
       margin: auto;
       text-align: center;
       line-height: 1.6;
     }
+
     .download-buttons {
       display: flex;
       justify-content: center;
       gap: 20px;
       margin-top: 30px;
     }
+
     .download-buttons a {
       padding: 15px 25px;
       background: #f2b705;
@@ -127,9 +126,11 @@
       text-decoration: none;
       transition: background 0.3s ease;
     }
+
     .download-buttons a:hover {
       background: #ffc107;
     }
+
   </style>
 </head>
 <body>
@@ -161,4 +162,5 @@
     </div>
   </section>
 
-  <!-- Diğer içerikler burada devam edecek -->
+</body>
+</html>
